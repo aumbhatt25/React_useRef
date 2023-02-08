@@ -3,16 +3,16 @@ import { useRef, useState } from 'react';
 import './App.css';
 
 function App() {
-  // const [value, setValue] = useState("");
-  const value = "";
+  const [value, setValue] = useState("");
+  // const value = "";
 
   const valueRef = useRef();
   console.log("render");
   const handleClick = () => {
     console.log(valueRef);
-    // setValue(valueRef.current.value);
+    setValue(valueRef.current.value);
 
-    value = valueRef.current.value;
+    // value = valueRef.current.value;
   };
   return (
     <div className="App">
